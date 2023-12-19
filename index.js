@@ -7,15 +7,15 @@ window.onload = function(){
     return Math.ceil((ms2 - ms1) / (24*60*60*1000));
 };
 
-let birthday = new Date('2023-9-26');
-console.log(birthday.toUTCString());
+let loveday = new Date('2023-09-26');
+
 //start
 let today = new Date();
-console.log(today.toUTCString());
+;
 //now
 
-let time = get_day_of_time(birthday,today)
-console.log(time);
+let time = get_day_of_time(loveday,today);
+
 const days = document.getElementById("days");
 days.innerHTML="Yêu em bé "+time+" ngày";
 }
